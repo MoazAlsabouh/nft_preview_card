@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0bfdff;
+}
+
+.contenar {
+  background: #0d1a2d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contenar .card {
+  width: 315px;
+  height: 600px;
+  background: #15273f;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 2px 5px 10px 20px #0c192c , 2px 1px 20px 7px #0c192c;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contenar .card .image {
+  width: 270px;
+  height: 270px;
+  margin: 20px;
+  position: relative;
+}
+
+.contenar .card .image:hover::before {
+  content: "";
+  background: var(--main-color);
+  opacity: 0.5;
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  z-index: 2;
+}
+
+.contenar .card .image img {
+  max-width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contenar .card .image .view {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  z-index: 5;
+  display: none;
+}
+
+.contenar .card .image:hover .view {
+  display: block;
+}
+
+.contenar .card .info {
+  width: 315px;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenar .card .info h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  color: #f8feff;
+  padding: 5px 15px 10px;
+}
+
+.contenar .card .info h1:hover {
+  color: var(--main-color);
+}
+
+.contenar .card .info p {
+  color: #55698a;
+  padding: 5px 15px 5px;
+}
+
+.contenar .card .info .left {
+  width: 50%;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.contenar .card .info .left img {
+  max-width: 100%;
+}
+
+.contenar .card .info .left p {
+  color: var(--main-color);
+}
+
+.contenar .card .info .right {
+  width: 50%;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.contenar .card .info .right p {
+  color: #6a7f9c;
+}
+.contenar .card .info .right img {
+  max-width: 100%;
+}
+
+.contenar .card hr {
+  display: inline-block;
+  width: 85%;
+  height: 2px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-color: #687c97;
+}
+
+.contenar .card .acount {
+  display: flex;
+  padding: 0 20px;
+}
+
+.contenar .card .acount img {
+  width: 40px;
+  height: 35px;
+  border: 1px solid #dae7f8;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.contenar .card .acount p {
+  color: #5e7390;
+  padding: 8px 20px;;
+}
+
+.contenar .card .acount p .avatar {
+  color: #dae7f8;
+}
+
+.contenar .card .acount p .avatar:hover {
+  color: var(--main-color);
+}
